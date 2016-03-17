@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Prerequisites
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -18,7 +20,7 @@ sudo apt-get -y install doxygen graphviz imagemagick
 sudo apt-get -y install texlive texlive-extra-utils texlive-latex-extra texlive-font-utils texlive-lang-portuguese dvipng
 sudo apt-get -y install python-sphinx dia 
 sudo apt-get -y install python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev
-sudo apt-get -y install libboost-signals-dev libboost-filesystem-dev
+sudo apt-get -y install libboost-dev libboost-signals-dev libboost-filesystem-dev
 sudo apt-get -y install openmpi-bin openmpi-common openmpi-doc libopenmpi-dev
 
 # Installation
@@ -27,5 +29,5 @@ hg clone http://code.nsnam.org/bake
 export BAKE_HOME=`pwd`/bake 
 export PATH=$PATH:$BAKE_HOME
 export PYTHONPATH=$PYTHONPATH:$BAKE_HOME
-bake.py configure -e ns-3.17
+bake.py configure -e ns-allinone-3.24
 bake.py deploy

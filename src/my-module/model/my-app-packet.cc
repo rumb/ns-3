@@ -104,6 +104,7 @@ namespace ns3 {
   {
     NS_LOG_FUNCTION (this);
     m_Data = data_ptr;
+    return true;
   }
 
   void myPacket::AddCacheFlag ()

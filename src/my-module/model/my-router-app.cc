@@ -303,7 +303,7 @@ namespace ns3 {
       return;
     }
     // ついか
-    if( !PBR.CheckEntry (ptr->content_name){
+    if( !PBR.CheckEntry (ptr->content_name) ){
         PBR.AddEntry (ptr, from);
         SendPacket (PBR.GetPBRPacket(ptr->content_name));
         }else{

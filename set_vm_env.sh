@@ -1,7 +1,10 @@
+#!/bin/bash
+
 # uninstall apps
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y remove --purge lens*
+sudo apt-get -y remove --purge webapps*
 sudo apt-get -y remove --purge thunderbird* 
 sudo apt-get -y remove --purge firefox*
 sudo apt-get -y remove --purge libreoffice*
